@@ -1,25 +1,29 @@
-﻿Estimate summary,,,,,,,,,
-Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
-0,13965.000000000004,167580,USD,,,,,,
-,,* Includes upfront cost,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-Detailed Estimate,,,,,,,,,
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,19575.890000000003,234910.68,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
-My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,55.35,664.2,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,55.35,664.20,USD,,Number of NAT Gateways (1)
 My Estimate,US East (N. Virginia),,Amazon CloudFront,0,3691.84,44302.08,USD,,"Data transfer out to internet (40 TB per month), Data transfer out to origin (8 TB per month), Number of requests (HTTPS) (200 million per month)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,1457.26,17487.12,USD,,"S3 Standard storage (60 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (10000000), GET, SELECT, and all other requests from S3 Standard (2000000), Data returned by S3 Select (5 TB per month), Data scanned by S3 Select (0 GB per month)"
-My Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,791.29,9495.48,USD,,"S3 Standard-IA storage (60 TB per month), PUT, COPY, POST, LIST requests to S3 Standard-IA (500000), GET, SELECT, and all other requests from S3 Standard-IA (50000), Lifecycle Transition requests (500000), Data retrievals (1 TB per month), Data returned by S3 Select (300 GB per month), Data scanned by S3 Select (0 GB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,1457.26,17487.12,USD,,"S3 Standard storage (60 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (10000000), GET, SELECT, and all other requests from S3 Standard (2000000), Data returned by S3 Select (5 TB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,791.29,9495.48,USD,,"S3 Standard-IA storage (60 TB per month), PUT, COPY, POST, LIST requests to S3 Standard-IA (500000), GET, SELECT, and all other requests from S3 Standard-IA (50000), Lifecycle Transition requests (500000), Data retrievals (1 TB per month), Data returned by S3 Select (300 GB per month)"
 My Estimate,US East (N. Virginia),,S3 Glacier Flexible Retrieval,0,222.31,2667.72,USD,,"S3 Glacier Flexible Retrieval Average Object Size (16 MB), Provisioned Capacity Units (0), null (0), S3 Glacier Flexible Retrieval storage (60 TB per month)"
-My Estimate,US East (N. Virginia),Application servers in Private subnets,Amazon EC2 ,0,2262.6600000000003,27151.92,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 10), Advance EC2 instance (c7g.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (16 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),RDS,Amazon RDS for MySQL,0,2382.38,28588.56,USD,,"Storage amount (1 TB), Storage for each RDS instance (General Purpose SSD (gp3)), Nodes (4), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (100 GB), General Purpose SSD (gp3) - IOPS (12000), General Purpose SSD (gp3) - Throughput (500 MiBps)"
-My Estimate,US East (N. Virginia),,Application Load Balancer,0,852.0500000000001,10224.6,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),App servers in Private subnets,Amazon EC2 ,0,3709.86,44518.32,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 10), Advance EC2 instance (c7g.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,852.0500000000001,10224.60,USD,,Number of Application Load Balancers (2)
 My Estimate,US East (N. Virginia),Web servers on public subnets,Amazon EC2 ,0,2249.86,26998.32,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 10), Advance EC2 instance (c7g.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-Acknowledgement,,,,,,,,,
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
-,,,,,,,,,
-Rationale,,,,,,,,,
-"To make the system adapt higher demand, I increase the capacity of Cloudfront, S3, RDS with more nodes for redundancy. Besides, I use more instances of EC2 at average 10 instances On-Demand, because at peak time  it can be 12 after scaling, and reduce to 8 at night time ",,,,,,,,,
+My Estimate,US West (Oregon),,Amazon RDS for MySQL,0,1186.44,14237.28,USD,,"Storage amount (1 TB), Storage for each RDS instance (General Purpose SSD (gp3)), Nodes (2), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), General Purpose SSD (gp3) - IOPS (12000), General Purpose SSD (gp3) - Throughput (500 MiBps)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,2372.88,28474.56,USD,,"Storage amount (1 TB), Storage for each RDS instance (General Purpose SSD (gp3)), Nodes (4), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), General Purpose SSD (gp3) - IOPS (12000), General Purpose SSD (gp3) - Throughput (500 MiBps)"
+My Estimate,US East (N. Virginia),Manage users pool,Amazon Cognito,0,2986.75,35841.00,USD,,"Optimization Rate for Token Requests (0), Optimization Rate for App Clients (0), Number of monthly active users (MAU) (50000), Advanced security features (Enabled), Number of token requests (50000)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+Rationale:
+Because the demand is higher, so we need some changes:
+Add: I add 2 Read replica nodes to us-west-2 for Disaster Recovery purpose, and Cognito to enhance security.
+Changes: I increase more Data transfer to CloudFront for caching more resources; we also need more storage to S3 to store media & RDS to store user data and metadata; it's also required more Calculation ability to EC2
